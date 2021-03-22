@@ -1,3 +1,12 @@
-## [0.0.1] - TODO: Add release date.
+## 0.0.2
 
-* TODO: Describe initial release.
+- Initial version, created by Thit Lwin
+- Already included
+    - camelize
+    - underscored
+    - dasherize
+    - humanize
+    - words
+    - repeat
+    - count
+    - reverse
