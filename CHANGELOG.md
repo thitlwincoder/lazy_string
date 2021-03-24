@@ -1,12 +1,9 @@
-## 0.0.2
+## 0.0.3
 
-- Initial version, created by Thit Lwin
-- Already included
-    - camelize
-    - underscored
-    - dasherize
-    - humanize
-    - words
-    - repeat
-    - count
-    - reverse
+- Edit description
+- Add
+    - Example
+    - Function
+        - clean
+        - chars
+        - classify

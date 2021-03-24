@@ -1,8 +1,11 @@
 name: lazy_string
-description: A new Flutter package project.
-version: 0.0.2
+description: This package can help people who are _lazier_ and _beginner_ to the faster when they use `String` and make a lot of function.
+version: 0.0.3
 author: Thit Lwin <thitlwincoder@gmail.com>
 homepage: https://github.com/thitlwincoder/lazy_string
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
+
+dev_dependencies:
+  pedantic: ^1.11.0

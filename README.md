@@ -54,14 +54,23 @@ humanize('  capitalize dash-CamelCase_underscore trim  ');
 Split string by delimiter (String or Pattern), /\s+/ by default.
 
 ```dart
-words("   I   love   you   ");
-// => ["I", "love", "you"]
+words("   lazy   string   ");
+// => ["lazy", "string"]
 
-words("I_love_you", delimiter: "_");
-// => ["I", "love", "you"]
+words("lazy_string", delimiter: "_");
+// => ["lazy", "string"]
 
 words("   ")
 // => []
+```
+
+### chars(String text) => List\<String\>
+
+
+```dart
+chars('lazystring');
+// => ["l", "a", "z", "y", "s", "t", "r", "i", "n", "g"]
+
 ```
 
 ### repeat(String text, {int count, String separator}) => String
@@ -69,10 +78,10 @@ words("   ")
 Repeats a string count times.
 
 ```dart
-repeat("foo", 3);
-// => "foofoofoo"
+repeat("lazy", count: 3);
+// => "lazylazylazy"
 
-repeat('lazy', count: 2, separator: 'string')
+repeat('lazy', count: 2, separator: 'string');
 // => "lazystringlazy"
 ```
 
@@ -92,4 +101,22 @@ Return reversed string.
 ```dart
 reverse('Music 𝄞 make happy');
 // => "yppah ekam 𝄞 cisuM"
+```
+
+### clean(String text) => String
+
+Trim and replace multiple spaces with a single space.
+
+```dart
+clean('   lazy    string   '); 
+// => "lazy string"
+```
+
+### classify(String text) => String
+
+Converts string to camelized class name. First letter is always upper case
+
+```dart
+classify('lazy_string'); 
+// => "LazyString"
 ```

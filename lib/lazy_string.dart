@@ -27,16 +27,17 @@ String dasherize(String text) {
 }
 
 String humanize(String text) {
-  return capitalize(underscored(text.trim()).replaceAll('_', ' '));
+  return _capitalize(underscored(text.trim()).replaceAll('_', ' '));
 }
 
-String capitalize(String text) {
-  var remaining = text.substring(1).toLowerCase();
+String _capitalize(String text, {bool lowercase = false}) {
+  var remaining =
+      lowercase ? text.substring(1).toLowerCase() : text.substring(1);
   return text.substring(0, 1).toUpperCase() + remaining;
 }
 
 List<String> words(String text, {String delimiter}) {
-  if (isBlank(text)) return [];
+  if (_isBlank(text)) return [];
   return text.trim().split(RegExp(delimiter ?? r'\s+'));
 }
 
@@ -50,7 +51,7 @@ String repeat(String text, {int count = 1, String separator}) {
   return separator == null ? result.join() : result.join(separator);
 }
 
-bool isBlank(String text) {
+bool _isBlank(String text) {
   return RegExp(r'^\s*$').hasMatch(text);
 }
 
@@ -62,4 +63,17 @@ int count(String text, String char) {
 
 String reverse(String text) {
   return String.fromCharCodes(text.runes.toList().reversed);
+}
+
+String clean(String text) {
+  return text.trim().replaceAll(RegExp(r'\s\s+'), ' ');
+}
+
+List<String> chars(String text) {
+  return text.split('');
+}
+
+String classify(String text) {
+  return _capitalize(
+      camelize(text.replaceAll(r'_', ' ')).replaceAll(r'\s', ''));
 }
