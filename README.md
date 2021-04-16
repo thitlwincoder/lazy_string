@@ -9,16 +9,16 @@ This package can help people who are _lazier_ and _beginner_ to the faster when 
 Converts underscored or dasherized String to a camelized one. Begins with a lower case letter unless it starts with an underscore, dash or an upper case letter.
 
 ```dart
-camelize('lazy-string');
+LazyString.camelize('lazy-string');
 // => "lazyString"
 
-camelize('-lazy-string');
+LazyString.camelize('-lazy-string');
 // => "LazyString"
 
-camelize('_lazy_string');
+LazyString.camelize('_lazy_string');
 // => "LazyString"
 
-camelize('Lazy_string');
+LazyString.camelize('Lazy_string');
 // => "LazyString"
 ```
 
@@ -27,7 +27,7 @@ camelize('Lazy_string');
 Converts a camelized or dasherized String into an underscored one.
 
 ```dart
-underscored('LazyString');
+LazyString.underscored('LazyString');
 // => "lazy_string"
 ```
 
@@ -36,7 +36,7 @@ underscored('LazyString');
 Converts a underscored or camelized String into an dasherized one.
 
 ```dart
-dasherize('LazyString');
+LazyString.dasherize('LazyString');
 // => "-lazy-string"
 ```
 
@@ -45,7 +45,7 @@ dasherize('LazyString');
 Converts an underscored, camelized, or dasherized String into a humanized one. Also removes beginning and ending whitespace, and removes the postfix '_id'.
 
 ```dart
-humanize('  capitalize dash-CamelCase_underscore trim  ');
+LazyString.humanize('  capitalize dash-CamelCase_underscore trim  ');
 // => "Capitalize dash camel case underscore trim"
 ```
 
@@ -54,13 +54,13 @@ humanize('  capitalize dash-CamelCase_underscore trim  ');
 Split string by delimiter (String or Pattern), /\s+/ by default.
 
 ```dart
-words("   lazy   string   ");
+LazyString.words("   lazy   string   ");
 // => ["lazy", "string"]
 
-words("lazy_string", delimiter: "_");
+LazyString.words("lazy_string", delimiter: "_");
 // => ["lazy", "string"]
 
-words("   ")
+LazyString.words("   ")
 // => []
 ```
 
@@ -68,7 +68,7 @@ words("   ")
 
 
 ```dart
-chars('lazystring');
+LazyString.chars('lazystring');
 // => ["l", "a", "z", "y", "s", "t", "r", "i", "n", "g"]
 
 ```
@@ -78,10 +78,10 @@ chars('lazystring');
 Repeats a string count times.
 
 ```dart
-repeat("lazy", count: 3);
+LazyString.repeat("lazy", count: 3);
 // => "lazylazylazy"
 
-repeat('lazy', count: 2, separator: 'string');
+LazyString.repeat('lazy', count: 2, separator: 'string');
 // => "lazystringlazy"
 ```
 
@@ -90,7 +90,7 @@ repeat('lazy', count: 2, separator: 'string');
 Returns int of occurrences of char in String.
 
 ```dart
-count("Hello world", "l");
+LazyString.count("Hello world", "l");
 // => 3
 ```
 
@@ -99,7 +99,7 @@ count("Hello world", "l");
 Return reversed string.
 
 ```dart
-reverse('Music 𝄞 make happy');
+LazyString.reverse('Music 𝄞 make happy');
 // => "yppah ekam 𝄞 cisuM"
 ```
 
@@ -108,7 +108,7 @@ reverse('Music 𝄞 make happy');
 Trim and replace multiple spaces with a single space.
 
 ```dart
-clean('   lazy    string   '); 
+LazyString.clean('   lazy    string   '); 
 // => "lazy string"
 ```
 
@@ -117,6 +117,6 @@ clean('   lazy    string   ');
 Converts string to camelized class name. First letter is always upper case
 
 ```dart
-classify('lazy_string'); 
+LazyString.classify('lazy_string'); 
 // => "LazyString"
 ```

@@ -1,9 +1,3 @@
-## 0.0.3
+## 0.0.4
 
-- Edit description
-- Add
-    - Example
-    - Function
-        - clean
-        - chars
-        - classify
+- Update Fixed & Clean Bugs
