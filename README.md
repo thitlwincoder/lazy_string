@@ -1,5 +1,12 @@
 # lazy_string
 
+[![pub package](https://img.shields.io/pub/v/lazy_string.svg?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/lazy_string)
+[![Last Commits](https://img.shields.io/github/last-commit/thitlwincoder/lazy_string?logo=git&logoColor=white)](https://github.com/thitlwincoder/lazy_string/commits/master)
+[![GitHub repo size](https://img.shields.io/github/repo-size/thitlwincoder/lazy_string)](https://github.com/thitlwincoder/lazy_string)
+[![License](https://img.shields.io/github/license/thitlwincoder/lazy_string?logo=open-source-initiative&logoColor=green)](https://github.com/thitlwincoder/lazy_string/blob/master/LICENSE)
+<br>
+[![Uploaded By](https://img.shields.io/badge/uploaded%20by-thitlwincoder-blue)](https://github.com/thitlwincoder)
+
 This package can help people who are _lazier_ and _beginner_ to the faster when they use `String` and make a lot of function.
 
 ## Usage
