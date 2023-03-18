@@ -1,11 +1,10 @@
 name: lazy_string
 description: This package can help people who are lazier and beginner to the faster when they use String and make a lot of function.
 version: 0.0.4
-author: Thit Lwin <thitlwincoder@gmail.com>
 homepage: https://github.com/thitlwincoder/lazy_string
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.19.4 <3.0.0"
 
 dev_dependencies:
-  pedantic: ^1.11.0
+  pedantic: ^1.11.1
