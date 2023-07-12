@@ -127,3 +127,9 @@ Converts string to camelized class name. First letter is always upper case
 LazyString.classify('lazy_string'); 
 // => "LazyString"
 ```
+
+## Contribution
+
+Feel free to file an [issue](https://github.com/thitlwincoder/lazy_string/issues/new) if you find a problem or make pull requests.
+
+All contributions are welcome :)
